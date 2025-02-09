@@ -1,0 +1,109 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Full-screen container */
+.ques-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    flex-direction: column;
+}
+
+/* Question box */
+.ques-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 1500px; /* Decreased width */
+    height: 200px;
+    position: relative;
+    margin-top: -100px; /* Shift upwards */
+}
+
+/* Timer */
+.Timer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Question text */
+.ques-box h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 5px;
+    position: absolute;
+}
+
+/* Question content */
+.ques-box p {
+    color: #555;
+    font-size: 20px;
+    margin-top: 70px;
+    position: relative;
+}
+
+.ques-box:hover {
+    background-color:#caf8d5;
+    color: black;
+}
+
+/* Container for options */
+.options-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 50px; /* Space between options */
+    width: 1000px; /* Decreased width of options */
+    margin-top: 80px; /* Space between question and options */
+}
+
+/* Option buttons */
+.option-btn {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s ease-in-out;
+    width: 100%;
+}
+
+/* Option button hover effect */
+.option-btn:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Next button */
+.next-btn {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Next button hover effects */
+.next-btn:hover {
+    background-color: #218838;
+}
